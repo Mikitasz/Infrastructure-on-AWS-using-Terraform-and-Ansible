@@ -1,3 +1,4 @@
 # [StaticWebApp-AWS-TERRAFORM-ANISBLE](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE)
 
-![1706554146184](image/README/1706554146184.png)
+
+![Untitled Diagram (1)](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE/assets/94795099/1b646a61-0068-4519-9da6-f4284ecfc662)
