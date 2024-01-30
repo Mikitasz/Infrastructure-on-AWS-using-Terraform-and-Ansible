@@ -13,10 +13,25 @@ provider "aws" {
 
 module "sg" {
     source = "./modules/sg"
-}
 
+}
+module "key_pair" { 
+	source     = "./modules/create key-pair" 
+   
+}
+module "bastion-host" { 
+	source     = "./modules/bastion" 
+    sg_bastion_id =  module.sg.sg_bastion_id
+}
 
 module "ec2-host" { 
 	source     = "./modules/ec2" 
-    sg_id =  module.sg.sg_id
+    sg_id =  module.sg.sg_web_id
+   
+}
+
+module "nginx" { 
+	source     = "./modules/nginx" 
+    sg_id =  module.sg.sg_nginx_id
+   
 }
