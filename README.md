@@ -2,11 +2,11 @@
 
 ## Usage
 
-Create file `<name>`.tfvars in main folder. Add next params (But before create User in AWS using AMI):
+Create file `<name>`.tfvars in main folder. Add next params (But before create User in AWS using AMI, shoud have access to EC2, VPC, SG):
 
 ```
-access_key=""
-secret_key=""
+access_key="your_value"
+secret_key="your_value"
 ```
 
 To user run
