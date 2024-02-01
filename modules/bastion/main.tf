@@ -5,9 +5,9 @@ resource "aws_instance" "bastion" {
     instance_type = "t2.micro"
     subnet_id = var.subnet_id
     tags = {
-    Name = "bastion"
+    Name = "Bastion"
     }
-    vpc_security_group_ids = [var.sg_bastion_id]
+    security_groups = [var.sg_bastion_id]
     key_name = "bastion-key-pair"
     associate_public_ip_address = true
 }

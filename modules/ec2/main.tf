@@ -6,9 +6,9 @@ resource "aws_instance" "webserver" {
     instance_type = "t2.micro"
     subnet_id = var.subnet_id
     tags = {
-    Name = "webserver"
+    Name = "Webserver"
     }
-    vpc_security_group_ids = [var.sg_id]
+    security_groups = [var.sg_id]
     key_name = "web-key-pair"
     
 }
