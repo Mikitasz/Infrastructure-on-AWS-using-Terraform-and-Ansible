@@ -10,4 +10,5 @@ resource "aws_instance" "webserver" {
     }
     vpc_security_group_ids = [var.sg_id]
     key_name = "web-key-pair"
+    
 }

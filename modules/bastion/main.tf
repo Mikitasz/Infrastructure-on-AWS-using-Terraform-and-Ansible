@@ -9,4 +9,5 @@ resource "aws_instance" "bastion" {
     }
     vpc_security_group_ids = [var.sg_bastion_id]
     key_name = "bastion-key-pair"
+    associate_public_ip_address = true
 }

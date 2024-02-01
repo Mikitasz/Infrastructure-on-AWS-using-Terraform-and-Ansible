@@ -10,4 +10,5 @@ resource "aws_instance" "nginx" {
     }
     vpc_security_group_ids = [var.sg_id]
     key_name = "nginx-key-pair"
+    associate_public_ip_address = true
 }

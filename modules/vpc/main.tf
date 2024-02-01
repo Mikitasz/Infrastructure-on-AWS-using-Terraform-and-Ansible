@@ -14,7 +14,7 @@ output "vpc_id" {
 resource "aws_subnet" "public_subnet" {
   vpc_id     = aws_vpc.vpc.id
   cidr_block = "172.16.1.0/24"
-
+  map_public_ip_on_launch = true  
   tags = {
     Name = "public_subnet-terraform"
   }
