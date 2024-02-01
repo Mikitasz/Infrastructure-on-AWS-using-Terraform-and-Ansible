@@ -1,3 +1,6 @@
 .*
 secrets.tfvars
 terraform.*
+bastion-key-pair
+nginx-key-pair
+web-key-pair
