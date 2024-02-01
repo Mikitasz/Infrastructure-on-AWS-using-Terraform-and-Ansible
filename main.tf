@@ -39,3 +39,15 @@ module "nginx" {
     sg_id =  module.sg.sg_nginx_id
     subnet_id = module.vpc.public_subnet_id
 }
+
+module "IG" {
+    source = "./modules/internet_gateway"   
+    vpc_id=module.vpc.vpc_id
+}
+
+module "route" {
+    source = "./modules/route"   
+    vpc_id=module.vpc.vpc_id
+    subnet_id = module.vpc.public_subnet_id
+    gateway_id=module.IG.IG_id
+}
