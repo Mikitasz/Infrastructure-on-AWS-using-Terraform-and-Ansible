@@ -11,7 +11,7 @@ resource "aws_route_table" "second_rt" {
  }
  
  tags = {
-   Name = "2nd Route Table"
+   Name = "Public-Route-table"
  }
 }
 resource "aws_route_table_association" "public_subnet_asso" {
