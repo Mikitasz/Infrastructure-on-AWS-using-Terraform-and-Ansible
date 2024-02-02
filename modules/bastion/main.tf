@@ -11,3 +11,6 @@ resource "aws_instance" "bastion" {
     key_name = "bastion-key-pair"
     associate_public_ip_address = true
 }
+output "bastion_server" {
+  value = aws_instance.bastion.public_ip
+}

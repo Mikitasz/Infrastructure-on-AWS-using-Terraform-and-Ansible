@@ -1,7 +1,8 @@
 [web]
+172.16.2.137 ansible_user=ubuntu ansible_ssh_private_key_file=../../web-key-pair
 
 [bastion]
-
+44.201.98.124 ansible_user=ubuntu ansible_ssh_private_key_file=../../bastion-key-pair
 
 [nginx]
-52.91.85.142
+44.211.79.71 ansible_user=ubuntu ansible_ssh_private_key_file=E:/studia/terraform/nginx-key-pair

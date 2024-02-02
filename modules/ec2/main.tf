@@ -12,3 +12,7 @@ resource "aws_instance" "webserver" {
     key_name = "web-key-pair"
     
 }
+output "web_server" {
+    value = aws_instance.webserver.private_ip
+  
+}

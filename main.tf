@@ -28,7 +28,7 @@ module "bastion-host" {
     subnet_id = module.vpc.public_subnet_id
 }
 
-module "ec2-host" { 
+module "web_server" { 
 	source     = "./modules/ec2" 
     sg_id =  module.sg.sg_private_subnet_id
     subnet_id = module.vpc.private_subnet_id
@@ -50,4 +50,14 @@ module "route" {
     vpc_id=module.vpc.vpc_id
     subnet_id = module.vpc.public_subnet_id
     gateway_id=module.IG.IG_id
+}
+
+module "ansible_inventory" {
+    source = "./modules/ansible_inventory"
+    nginx_server = module.nginx.public_ip
+    web_server = module.web_server.web_server
+    bastion_server = module.bastion-host.bastion_server
+    user = var.user
+
+  
 }

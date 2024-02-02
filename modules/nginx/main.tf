@@ -12,3 +12,8 @@ resource "aws_instance" "nginx" {
     key_name = "nginx-key-pair"
     associate_public_ip_address = true
 }
+
+output "public_ip" {
+    value = aws_instance.nginx.public_ip
+  
+}
