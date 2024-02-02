@@ -3,9 +3,9 @@ data "http" "myip" {
 }
 variable "vpc_id" {}
 
-resource "aws_security_group" "public_subnet" {
-  name        = "public_subnet"
-  description = "Allow ssh to public_subnet"
+resource "aws_security_group" "bastion_server" {
+  name        = "bastion_server"
+  description = "Allow ssh to bastion_server"
   vpc_id = var.vpc_id
   ingress {
     from_port   = 22
@@ -22,11 +22,11 @@ egress {
   }
 }
 output "sg_public_subnet_id" {
-  value = aws_security_group.public_subnet.id
+  value = aws_security_group.bastion_server.id
 }
 
-resource "aws_security_group" "nginx-lb-sg" {
-  name        = "nginx-lb-sg"
+resource "aws_security_group" "nginx_server" {
+  name        = "nginx_server"
   description = "Nginx load balancer"
   vpc_id = var.vpc_id
   ingress {
@@ -50,13 +50,13 @@ resource "aws_security_group" "nginx-lb-sg" {
     }
 }
 output "sg_nginx_id" {
-  value = aws_security_group.nginx-lb-sg.id
+  value = aws_security_group.nginx_server.id
 }
 
 
-resource "aws_security_group" "private_subnet" {
-  name        = "private_subnet"
-  description = "Allow all ssh and http to private_subnet"
+resource "aws_security_group" "web_server" {
+  name        = "web_server"
+  description = "Allow all ssh and http to web_server"
   vpc_id = var.vpc_id
   ingress {
     from_port   = 80
@@ -80,7 +80,7 @@ resource "aws_security_group" "private_subnet" {
     }
 }
 output "sg_private_subnet_id" {
-  value = aws_security_group.private_subnet.id
+  value = aws_security_group.web_server.id
 }
 
 

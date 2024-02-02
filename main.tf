@@ -40,6 +40,7 @@ module "nginx" {
     subnet_id = module.vpc.public_subnet_id
 }
 
+
 module "IG" {
     source = "./modules/internet_gateway"   
     vpc_id=module.vpc.vpc_id
@@ -50,6 +51,13 @@ module "route" {
     vpc_id=module.vpc.vpc_id
     subnet_id = module.vpc.public_subnet_id
     gateway_id=module.IG.IG_id
+    nat_gateway=module.nat.nat_gateway
+    private_subnet = module.vpc.private_subnet_id
+    default_route_table_id= module.vpc.default_route_table_id
+}
+module "nat" {
+  source = "./modules/NAT"
+  public_subnet = module.vpc.public_subnet_id
 }
 
 module "ansible_inventory" {
@@ -57,7 +65,5 @@ module "ansible_inventory" {
     nginx_server = module.nginx.public_ip
     web_server = module.web_server.web_server
     bastion_server = module.bastion-host.bastion_server
-    user = var.user
-
-  
+    user = var.user 
 }
