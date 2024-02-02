@@ -15,8 +15,8 @@ To user run
 terraform init
 terraform plan / apply / destroy -var-file=<name>.tfvars
 ```
+![terraform drawio](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/assets/94795099/8e26972a-35a2-44ae-8dab-b5a71637c8af)
 
-## ![Untitled Diagram (1)](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE/assets/94795099/1b646a61-0068-4519-9da6-f4284ecfc662)Usage Ansible
 
 ```
 ansible-playbooks -i ansible/inventory/hosts (playbook)
