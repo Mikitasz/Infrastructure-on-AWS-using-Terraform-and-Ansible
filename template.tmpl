@@ -1,0 +1,8 @@
+[web]
+${web_server} ansible_user=${user} ansible_ssh_private_key_file=${key_web}
+
+[bastion]
+${bastion_server} ansible_user=${user} ansible_ssh_private_key_file=${key_bastion}
+
+[nginx]
+${nginx_server} ansible_user=${user} ansible_ssh_private_key_file=${key_nginx}
