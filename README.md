@@ -26,20 +26,22 @@ ansible-playbooks -i ansible/inventory/hosts (playbook)
 
 ## State
 
-✅ Make diagram
+✅ Diagram
 
-✅ Write Terraform IaC
+✅ Terraform IaC
 
 ✅ Test Terraform
 
-❌ Make more readable
+❌ Readability
 
-❌ Write simple web app
+❌ Web app code
 
-❌ Write Ansible playbooks
+❌ Ansible playbooks
 
-❌ Add autoscaling group
+❌ Autoscaling group
 
-❌ Add maximum automations
+❌ Maximum automations
 
 ❌ Test evrything
+
+❌ Final diagram
