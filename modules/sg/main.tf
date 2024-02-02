@@ -62,13 +62,13 @@ resource "aws_security_group" "web_server" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    security_groups = [aws_security_group.nginx-lb-sg.id]
+    security_groups = [aws_security_group.nginx_server.id]
   }
    ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    security_groups = [aws_security_group.public_subnet.id]
+    security_groups = [aws_security_group.bastion_server.id]
    
   }
   
