@@ -15,9 +15,31 @@ To user run
 terraform init
 terraform plan / apply / destroy -var-file=<name>.tfvars
 ```
+
 ![terraform drawio](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/assets/94795099/8e26972a-35a2-44ae-8dab-b5a71637c8af)
 
+## Usage Ansible
 
 ```
 ansible-playbooks -i ansible/inventory/hosts (playbook)
 ```
+
+## State
+
+✅ Make diagram
+
+✅ Write Terraform IaC
+
+✅ Test Terraform
+
+❌ Make more readable
+
+❌ Write simple web app
+
+❌ Write Ansible playbooks
+
+❌ Add autoscaling group
+
+❌ Add maximum automations
+
+❌ Test evrything
