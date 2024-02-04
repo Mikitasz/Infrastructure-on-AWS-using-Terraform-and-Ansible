@@ -34,8 +34,6 @@ ansible-playbooks -i ansible/inventory/hosts (playbook)
 
 ❌ Readability
 
-❌ Web app code
-
 ❌ Ansible playbooks
 
 ❌ Autoscaling group
