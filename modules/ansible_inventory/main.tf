@@ -31,3 +31,16 @@ resource "local_file" "ansible_inventory" {
   })
   filename = "ansible/inventory/hosts"
 }
+
+
+resource "local_file" "nginx_conf" {
+  content = templatefile("nginx.tmpl", {
+
+
+   
+    web_server = var.web_server
+   
+
+  })
+  filename = "ansible/source/nginx.conf"
+}

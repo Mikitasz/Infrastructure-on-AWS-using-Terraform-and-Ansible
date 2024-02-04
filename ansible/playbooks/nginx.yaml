@@ -2,6 +2,11 @@
 - name: Install and configure Nginx as load balancer
   hosts: nginx
   tasks:
+    - name: Change Hostname
+      hostname:
+        name: "{{ nginx_host_name  }}"
+      become: true
+
     - name: Install Nginx
       apt:
         name: nginx
@@ -21,6 +26,7 @@
       become: yes
       notify:
         - restart nginx
+
   handlers:
     - name: restart nginx
       service:

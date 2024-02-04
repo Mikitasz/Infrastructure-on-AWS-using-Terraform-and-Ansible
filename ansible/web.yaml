@@ -1,0 +1,4 @@
+---
+- import_playbook: playbooks/nginx.yaml
+- import_playbook: playbooks/bastion.yaml
+- import_playbook: playbooks/apache.yaml
