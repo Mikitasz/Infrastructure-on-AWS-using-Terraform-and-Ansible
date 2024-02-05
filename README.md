@@ -1,7 +1,6 @@
 # Infrastructure in AWS using Terraform and Ansible
 ## Table of Contents  
 [Project Description](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#project-description)
-
 [Project structure](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#project-structure)  
 [Dependencies](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#dependencies)  
 [Installation and startup](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#installation-and-startup)  
