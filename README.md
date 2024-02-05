@@ -94,6 +94,7 @@ Before you start using it, make sure you have the following tools installed:
 ✅ Final diagram
 
 ## Tree
+```bash
 .
 ├── README.md
 ├── ansible
@@ -178,3 +179,4 @@ Before you start using it, make sure you have the following tools installed:
 ├── terraform.tfstate
 ├── terraform.tfstate.backup
 └── vars.tf
+```
