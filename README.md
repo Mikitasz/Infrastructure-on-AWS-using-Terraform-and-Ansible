@@ -100,79 +100,22 @@ Before you start using it, make sure you have the following tools installed:
 ├── ansible
 │   ├── inventory
 │   ├── roles
-│   │   ├── common
-│   │   │   ├── README.md
-│   │   │   ├── defaults
-│   │   │   │   └── main.yml
-│   │   │   ├── handlers
-│   │   │   │   └── main.yml
-│   │   │   ├── meta
-│   │   │   │   └── main.yml
-│   │   │   ├── tasks
-│   │   │   │   └── main.yml
-│   │   │   ├── tests
-│   │   │   │   ├── inventory
-│   │   │   │   └── test.yml
-│   │   │   └── vars
-│   │   │       └── main.yml
-│   │   ├── nginx
-│   │   │   ├── README.md
-│   │   │   ├── defaults
-│   │   │   │   └── main.yml
-│   │   │   ├── handlers
-│   │   │   │   └── main.yml
-│   │   │   ├── meta
-│   │   │   │   └── main.yml
-│   │   │   ├── tasks
-│   │   │   │   └── main.yml
-│   │   │   ├── tests
-│   │   │   │   ├── inventory
-│   │   │   │   └── test.yml
-│   │   │   └── vars
-│   │   │       └── main.yml
-│   │   └── web
-│   │       ├── README.md
-│   │       ├── defaults
-│   │       │   └── main.yml
-│   │       ├── handlers
-│   │       │   └── main.yml
-│   │       ├── meta
-│   │       │   └── main.yml
-│   │       ├── tasks
-│   │       │   └── main.yml
-│   │       ├── tests
-│   │       │   ├── inventory
-│   │       │   └── test.yml
-│   │       └── vars
-│   │           └── main.yml
 │   ├── source
-│   │   └── index.html
 │   └── web.yaml
 ├── change_permission.sh
 ├── main.tf
 ├── modules
 │   ├── ASG
 │   ├── NAT
-│   │   └── main.tf
 │   ├── ansible_inventory
-│   │   └── main.tf
 │   ├── bastion
-│   │   └── main.tf
 │   ├── create key-pair
-│   │   └── main.tf
 │   ├── ec2
-│   │   ├── main.tf
-│   │   └── variables.tf
 │   ├── internet_gateway
-│   │   └── main.tf
 │   ├── nginx
-│   │   └── main.tf
 │   ├── route
-│   │   └── main.tf
 │   ├── sg
-│   │   └── main.tf
 │   └── vpc
-│       └── main.tf
 ├── nginx.tmpl
 ├── secrets.tfvars
 ├── template.tmpl
