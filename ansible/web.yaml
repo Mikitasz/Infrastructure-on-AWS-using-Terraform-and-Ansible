@@ -1,4 +1,8 @@
 ---
-- import_playbook: playbooks/nginx.yaml
-- import_playbook: playbooks/bastion.yaml
-- import_playbook: playbooks/apache.yaml
+- name: Install and configure Nginx as load balancer
+  hosts: all
+  become: yes
+  roles:
+    - common
+    - { role: roles/nginx, when: "'nginx' in group_names" }
+    - { role: roles/web, when: "'web' in group_names" }

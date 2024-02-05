@@ -1,8 +1,0 @@
----
-- name: Configure web server
-  hosts: web
-  tasks:
-    - name: Change Hostname
-      hostname:
-        name: "{{ web_host_name  }}"
-      become: true

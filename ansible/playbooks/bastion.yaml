@@ -1,8 +1,0 @@
----
-- name: Configure bastion
-  hosts: bastion
-  tasks:
-    - name: Change Hostname
-      hostname:
-        name: "{{ bastion_host_name  }}"
-      become: true
