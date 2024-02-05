@@ -1,8 +1,12 @@
 # Infrastructure in AWS using Terraform and Ansible
 ## Table of Contents  
-([Project Description](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#project-description))  
-  
-
+[Project Description](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#project-description)
+[Project structure](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#project-structure)  
+[Dependencies](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#dependencies)  
+[Installation and startup](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#installation-and-startup)  
+[Destroy](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#destroy)  
+[AWS Diagrams](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#aws-diagrams)  
+[State](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/blob/master/README.md#state)  
 
 ## Project Description
 This project is an automated way to deploy infrastructure to Amazon Web Services (AWS) using Terraform to create resources and Ansible to configure them. The project uses Nginx as a load balancer and Apache as a web server.
