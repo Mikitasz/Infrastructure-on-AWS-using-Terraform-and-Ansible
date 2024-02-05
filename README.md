@@ -16,12 +16,11 @@ terraform init
 terraform plan / apply / destroy -var-file=<name>.tfvars
 ```
 
-![terraform drawio](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/assets/94795099/8e26972a-35a2-44ae-8dab-b5a71637c8af)
 
 ## Usage Ansible
 
 ```
-ansible-playbooks -i ansible/inventory/hosts (playbook)
+ansible-playbooks -i ansible/inventory/hosts ansible/web.yaml
 ```
 
 ## State
@@ -34,7 +33,7 @@ ansible-playbooks -i ansible/inventory/hosts (playbook)
 
 ❌ Readability
 
-❌ Ansible playbooks
+✅ Ansible playbooks
 
 ❌ Autoscaling group
 
@@ -42,4 +41,4 @@ ansible-playbooks -i ansible/inventory/hosts (playbook)
 
 ❌ Test evrything
 
-❌ Final diagram
+✅ Final diagram
