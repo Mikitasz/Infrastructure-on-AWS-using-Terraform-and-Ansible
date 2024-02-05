@@ -7,7 +7,7 @@
 - [Destroy](#destroy)  
 - [AWS Diagrams](#aws-diagrams)  
 - [State](#state)  
-
+- [Tree](#tree)
 
 ## Project Description
 This project is an automated way to deploy infrastructure to Amazon Web Services (AWS) using Terraform to create resources and Ansible to configure them. The project uses Nginx as a load balancer and Apache as a web server.
@@ -67,19 +67,6 @@ Before you start using it, make sure you have the following tools installed:
 
 ## AWS Diagrams
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <img width="631" alt="s" src="https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/assets/94795099/24133ce8-8594-4b13-8260-8134d0e65389">
 
 ![Untitled Diagram drawio (8)](https://github.com/Mikitasz/StaticWebApp-AWS-TERRAFORM-ANISBLE-NGINX/assets/94795099/b256735d-f08f-4a0a-becf-343687a3d2aa)
@@ -105,3 +92,88 @@ Before you start using it, make sure you have the following tools installed:
 ❌ Test evrything
 
 ✅ Final diagram
+## Tree
+.
+├── README.md
+├── ansible
+│   ├── inventory
+│   ├── roles
+│   │   ├── common
+│   │   │   ├── README.md
+│   │   │   ├── defaults
+│   │   │   │   └── main.yml
+│   │   │   ├── handlers
+│   │   │   │   └── main.yml
+│   │   │   ├── meta
+│   │   │   │   └── main.yml
+│   │   │   ├── tasks
+│   │   │   │   └── main.yml
+│   │   │   ├── tests
+│   │   │   │   ├── inventory
+│   │   │   │   └── test.yml
+│   │   │   └── vars
+│   │   │       └── main.yml
+│   │   ├── nginx
+│   │   │   ├── README.md
+│   │   │   ├── defaults
+│   │   │   │   └── main.yml
+│   │   │   ├── handlers
+│   │   │   │   └── main.yml
+│   │   │   ├── meta
+│   │   │   │   └── main.yml
+│   │   │   ├── tasks
+│   │   │   │   └── main.yml
+│   │   │   ├── tests
+│   │   │   │   ├── inventory
+│   │   │   │   └── test.yml
+│   │   │   └── vars
+│   │   │       └── main.yml
+│   │   └── web
+│   │       ├── README.md
+│   │       ├── defaults
+│   │       │   └── main.yml
+│   │       ├── handlers
+│   │       │   └── main.yml
+│   │       ├── meta
+│   │       │   └── main.yml
+│   │       ├── tasks
+│   │       │   └── main.yml
+│   │       ├── tests
+│   │       │   ├── inventory
+│   │       │   └── test.yml
+│   │       └── vars
+│   │           └── main.yml
+│   ├── source
+│   │   └── index.html
+│   └── web.yaml
+├── change_permission.sh
+├── main.tf
+├── modules
+│   ├── ASG
+│   ├── NAT
+│   │   └── main.tf
+│   ├── ansible_inventory
+│   │   └── main.tf
+│   ├── bastion
+│   │   └── main.tf
+│   ├── create key-pair
+│   │   └── main.tf
+│   ├── ec2
+│   │   ├── main.tf
+│   │   └── variables.tf
+│   ├── internet_gateway
+│   │   └── main.tf
+│   ├── nginx
+│   │   └── main.tf
+│   ├── route
+│   │   └── main.tf
+│   ├── sg
+│   │   └── main.tf
+│   └── vpc
+│       └── main.tf
+├── nginx.tmpl
+├── secrets.tfvars
+├── template.tmpl
+├── terraform.tfstate
+├── terraform.tfstate.backup
+└── vars.tf
