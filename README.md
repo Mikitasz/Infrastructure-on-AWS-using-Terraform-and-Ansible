@@ -2,11 +2,11 @@
 ## Table of Contents  
 [Project Description](#Project Description)  
   
-<a name="Project Description"/>
+
 
 ## Project Description
 This project is an automated way to deploy infrastructure to Amazon Web Services (AWS) using Terraform to create resources and Ansible to configure them. The project uses Nginx as a load balancer and Apache as a web server.
-Create file `<name>`.tfvars in main folder. Add next params (But before create User in AWS using AMI, shoud have access to EC2, VPC, SG):
+Create file `<name>`.tfvars in main folder. Add next params (But before create User in AWS using AMI, shoud have access to EC2, VPC, SG).
 ## Project structure
 
 - **/**: Terraform file directory.
