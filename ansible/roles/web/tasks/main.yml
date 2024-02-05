@@ -1,0 +1,19 @@
+---
+# tasks file for web
+- name: Install Apache
+  apt:
+    name: apache2
+    state: present
+
+- name: Start Apach2 service
+  service:
+    name: apache2
+    state: started
+
+- name: Copy index.html to apache
+  copy:
+    src: ../../source/index.html
+    dest: /var/www/html/
+
+  notify:
+    - restart apache

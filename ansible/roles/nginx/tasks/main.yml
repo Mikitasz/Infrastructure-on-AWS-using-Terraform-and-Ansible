@@ -1,0 +1,17 @@
+---
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Start Nginx service
+  service:
+    name: nginx
+    state: started
+
+- name: Copy configure
+  ansible.builtin.copy:
+    src: ../../source/nginx.conf
+    dest: /etc/nginx/nginx.conf
+  notify:
+    - restart nginx

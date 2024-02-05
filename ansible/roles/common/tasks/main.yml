@@ -1,0 +1,6 @@
+---
+# tasks file for common
+- name: Change Hostname
+  hostname:
+    name: "{{ item }}"
+  with_items: "{{ group_names }}"
