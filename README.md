@@ -1,17 +1,13 @@
 # Infrastructure in AWS using Terraform and Ansible
 ## Table of Contents  
--[Project Description](#project-description)
--[Project structure](#project-structure)  
--[Dependencies](#dependencies)  
--[Installation and startup](#installation-and-startup)  
--[Destroy](#destroy)  
--[AWS Diagrams](#aws-diagrams)  
--[State](#state)  
+- [Project Description](#project-description)
+- [Project structure](#project-structure)  
+- [Dependencies](#dependencies)  
+- [Installation and startup](#installation-and-startup)  
+- [Destroy](#destroy)  
+- [AWS Diagrams](#aws-diagrams)  
+- [State](#state)  
 
-- [Main Title](#main-title)
-- [Section 1](#section-1)
-  - [Subsection 1.1](#subsection-1.1)
-- [Section 2](#section-2)
 
 ## Project Description
 This project is an automated way to deploy infrastructure to Amazon Web Services (AWS) using Terraform to create resources and Ansible to configure them. The project uses Nginx as a load balancer and Apache as a web server.
