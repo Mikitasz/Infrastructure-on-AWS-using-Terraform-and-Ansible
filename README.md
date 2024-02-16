@@ -1,4 +1,4 @@
-# Infrastructure in AWS using Terraform and Ansible
+# Infrastructure on AWS using Terraform and Ansible
 
 ## Table of Contents
 
@@ -13,9 +13,7 @@
 
 ## Project Description
 
-This project is an automated way to deploy infrastructure to Amazon Web Services (AWS) using Terraform to create resources and Ansible to configure them. The project uses Nginx as a load balancer and Apache as a web server.
-Create file `<name>`.tfvars in main folder. Add next params (But before create User in AWS using AMI, shoud have access to EC2, VPC, SG).
-
+This project automates the deployment of infrastructure on Amazon Web Services (AWS) using Terraform for resource creation and Ansible for configuration. The infrastructure includes Nginx as a load balancer and Apache as a web server. Prior to usage, create a file `<name>.tfvars` in the main folder and add the required parameters. Ensure that an AWS user with access to EC2, VPC, and SG is created using AMI.
 ## Project structure
 
 - **/**: Terraform file directory.
@@ -26,7 +24,7 @@ Create file `<name>`.tfvars in main folder. Add next params (But before create U
   - `template.tmpl`: Template for ansible inventory.
   - `change_permission.sh`: Change permission for keys.
   - `/modules`: Modules for Terraform.
-    In the secrets.tfvars, you need to specify the keys to the AWS user.
+    In the `secrets.tfvars`, you need to specify the keys to the AWS user.
     Example:
 
 ```
@@ -42,7 +40,7 @@ secret_key="your_value"
 
 ## Dependencies
 
-Before you start using it, make sure you have the following tools installed:
+Ensure the following tools are installed before usage:
 
 - [Terraform](https://www.terraform.io/)
 - [Ansible](https://www.ansible.com/)
